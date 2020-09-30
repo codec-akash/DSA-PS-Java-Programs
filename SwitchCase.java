@@ -1,6 +1,6 @@
 // Java program to demonstrate switch case 
 // with primitive(int) data type 
-public class Test { 
+public class SwitchCase { 
 	public static void main(String[] args) 
 	{ 
 		int day = 5; 
