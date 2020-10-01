@@ -1,5 +1,12 @@
 import java.util.Arrays;
 import java.util.Scanner;
+/*Given an unsorted integer array, find the smallest missing positive integer.
+ It should run in O(n) time and uses constant extra space.
+
+        Example 1:
+
+        Input: [1,2,0]
+        Output: 3  */
 
 public class First_Missing_Positive_Number {
 
