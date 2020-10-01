@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class SumDemo{
+   public static void main(String args[]){
+      Scanner scanner = new Scanner(System.in);           //Scanner class is used to take inputs.
+      int[] array = new int[10];
+      int sum = 0;
+      System.out.println("Enter the elements:");
+      for (int i=0; i<10; i++)
+      {
+    	  array[i] = scanner.nextInt();                       // This method fills the array by taking input from the user || the array index ranges from(0,9) in the loop.
+      }
+      for( int num : array) {                                   //initialises num value to first element of array and updates it to next element every time travells in the loop
+                                                           //condition breaks when the num=last element in the array
+          
+          sum = sum+num;                                   //for every iteration it adds the num(element of array) to the sum.                                  
+      }
+      System.out.println("Sum of array elements is:"+sum);      //A general statement to print the text inside "" is printed as it is and the sum is a variable of which value is printed
+   }
+}
