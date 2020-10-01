@@ -7,7 +7,7 @@ public class CheckPrime{
         x=input.nextInt();
         for(int i=1;i<=x;i++){
             if(x%i==0){
-                count+=1;
+                count++;
                     }
                 }            
         if(count>2 || count==1){
