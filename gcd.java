@@ -1,4 +1,4 @@
-public class gcd
+public class gcdAndLcm
 {
     // Recursive function to return gcd of a and b
     static int gcd(int a, int b)
@@ -18,16 +18,23 @@ public class gcd
             return gcd(a-b, b);
         return gcd(a, b-a);
     }
+
+    static int lcm(int a, int b)
+    {
+        return ((a*b)/gcd(a, b));
+    }
      
     // Driver method
     public static void main(String[] args) 
     {
         
         System.out.println(gcd(40,5));
-                System.out.println(gcd(48,56));
+        System.out.println(gcd(48,56));
+        System.out.println(lcm(40,5));
+        System.out.println(lcm(48,56));
 
         
         
-       } 
+     } 
        
 }
