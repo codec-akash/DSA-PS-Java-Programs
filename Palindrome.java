@@ -1,15 +1,18 @@
 import java.util.Scanner;
 
+import java.util.Scanner;
+
 public class Pallindrome {
 
     public static void main(String[] args) {
-        int n=1231;
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
         int rev= reverse(n);
         if(rev==n){
-            System.out.println("pallindrome");
+            System.out.println("Palindrome");
         }
         else{
-            System.out.println("not pallindrome");
+            System.out.println("Not a Palindrome");
         }
 
     }
