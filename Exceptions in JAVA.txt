@@ -1,0 +1,57 @@
+Types of Exception in JAVA :-
+
+
+1. ArithmeticException
+	It is thrown when an exceptional condition has occurred in an 	arithmetic operation.
+
+// Java program to demonstrate ArithmeticException 
+class ArithmeticException_Demo 
+{ 
+    public static void main(String args[]) 
+    { 
+        try { 
+            int a = 30, b = 0; 
+            int c = a/b;  // cannot divide by zero 
+            System.out.println ("Result = " + c); 
+        } 
+        catch(ArithmeticException e) { 
+            System.out.println ("Can't divide a number by 0"); 
+        } 
+    } 
+} 
+
+2. NullPointerException
+	This exception is raised when referring to the members of a null 	object. Null represents nothing
+
+//Java program to demonstrate NullPointerException 
+class NullPointer_Demo 
+{ 
+    public static void main(String args[]) 
+    { 
+        try { 
+            String a = null; //null value 
+            System.out.println(a.charAt(0)); 
+        } catch(NullPointerException e) { 
+            System.out.println("NullPointerException.."); 
+        } 
+    } 
+} 
+
+3. StringIndexOutOfBoundsException
+	It is thrown by String class methods to indicate that an index is 	either negative than the size of the string
+
+// Java program to demonstrate StringIndexOutOfBoundsException 
+class StringIndexOutOfBound_Demo 
+{ 
+    public static void main(String args[]) 
+    { 
+        try { 
+            String a = "This is like chipping "; // length is 22 
+            char c = a.charAt(24); // accessing 25th element 
+            System.out.println(c); 
+        } 
+        catch(StringIndexOutOfBoundsException e) { 
+            System.out.println("StringIndexOutOfBoundsException"); 
+        } 
+    } 
+} 
